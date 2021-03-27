@@ -1,6 +1,6 @@
-const { Model, Schema } = require('mongoose');
+const { model, Schema } = require('mongoose');
 
-const postSchma = new Schma ({
+const postSchema = new Schema({
   body: String,
   username: String,
   createdAt: String,
@@ -14,11 +14,11 @@ const postSchma = new Schma ({
   likes: [
     {
       username: String,
-      createdAT: String
+      createdAt: String
     }
   ],
   user: {
-    type: Schema.Types.ObjectId
+    type: Schema.Types.ObjectId,
     ref: 'users'
   }
 });
