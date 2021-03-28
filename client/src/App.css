@@ -10,3 +10,7 @@
   margin: auto;
 
 }
+
+.ui.pink.button:focus, ui.pink.buttons .button:focus{
+  background-color: #ffccbb;
+}
