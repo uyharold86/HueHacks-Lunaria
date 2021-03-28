@@ -8,11 +8,9 @@ import { Button, Card, Form, Grid, Image, Icon, Label} from 'semantic-ui-react';
 import { AuthContext } from '../context/auth';
 import LikeButton from '../components/LikeButton';
 import DeleteButton from '../components/DeleteButton';
-<<<<<<< HEAD
+
 import MyPopup from '../util/MyPopup'
-=======
-import MyPopup from '../util.Mypopup'
->>>>>>> c8e70f756a7c28070f1531285c501275ba2d7012
+
 
 function SinglePost(props) {
   const postId = props.match.params.postId;

@@ -46,21 +46,14 @@ function PostForm(){
           </Form.Field>
         </Form>
           {error && (
-<<<<<<< HEAD
             <div classname="ui error message" style={ marginBottom=20 }>
             <ul classname="list">
               <li>{error.graphQLErrors[0].message}</li>
             </ul>
-=======
-            <div classname="ui error message" style={ marginBottom:20}>
-              <ul classname="list">
-                <li>{error.graphQLErrors[0].message}</li>
-              </ul>
->>>>>>> c8e70f756a7c28070f1531285c501275ba2d7012
             </div>
           )}
-      </>
-    )
+        </>
+    );
 }
 
 const CREATE_POST_MUTATION = gql`
@@ -79,4 +72,4 @@ mutation createPost($body: String!){
 }
 `
 
-export default PostForm
+export default PostForm;
