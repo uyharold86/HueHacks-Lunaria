@@ -1,6 +1,6 @@
 import React, { userState } from 'react'
 import gql from 'graphql-tag';
-import { useMutation } from '@apollow/react-hooks';
+import { useMutation } from '@apollo/react-hooks';
 import { Button, Confirm, Icon } from 'semantic-ui-react';
 
 import { FETCH_POST_QUERY } from '../util/graphql';

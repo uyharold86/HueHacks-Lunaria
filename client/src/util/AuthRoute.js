@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Route, Redirect } from 'react-router-dom'
 
-import { AuthContext } from '../contest/auth'
+import { AuthContext } from '../context/auth'
 
 function AuthRoute({ componenet: Componenet, ...rest }) {
   const { user } = useContext(AuthContext);
@@ -16,4 +16,4 @@ function AuthRoute({ componenet: Componenet, ...rest }) {
   )
 }
 
-export defualt AuthRoute;
+export default AuthRoute;

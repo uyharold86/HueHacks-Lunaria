@@ -1,6 +1,6 @@
 import gql from 'graphql-tag';
 
-export const FETCH_POSTS_QUERY = gql`
+export const FETCH_POST_QUERY = gql`
   {
     getPosts{
       id 
@@ -20,4 +20,5 @@ export const FETCH_POSTS_QUERY = gql`
       }
     }
   }
-`;
+`
+export default FETCH_POST_QUERY;

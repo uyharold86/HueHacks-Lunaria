@@ -30,7 +30,7 @@ function LikeButton({ user, post: { id, likeCount, likes} }) {
           </Button>
       )
     ) : (
-          <Button as {Link} to="/login" color="pink" basic>
+          <Button as = {Link} to="/login" color="pink" basic>
             <Icon name='heart' />
           </Button>
     )
@@ -39,7 +39,7 @@ function LikeButton({ user, post: { id, likeCount, likes} }) {
         <Button as='div' labelPosition='right' onClick={likePost}>
           <MyPopup content={liked ? 'Unlike' : 'Like'}>
             {likeButton}
-          </MyPopoup>
+          </MyPopup>
           <Label basic color = 'teal' pointing='left'>
             {likeCount}
           </Label>

@@ -5,11 +5,11 @@ import { Grid, Transition } from 'semantic-ui-react'
 import { AuthContext } from '../context/auth'
 import PostCard from '../components/PostCard';
 import PostForm from '../components/Postform';
-import { FETCH_POSTS_QUERY } from '../util/graphql'
+import { FETCH_POST_QUERY } from '../util/graphql'
 
 function Home(){
   const { user } = useContext(AuthContext)
-  const { loading, data: {getPosts: posts} } = useQuery(FETCH_POSTS_QUERY);
+  const { loading, data: {getPosts: posts} } = useQuery(FETCH_POST_QUERY);
 
   if (data){
     console.log(data);

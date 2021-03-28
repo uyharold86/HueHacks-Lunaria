@@ -16,10 +16,10 @@ function PostForm(){
     variables: values,
     update(proxy, result) {
       proxy.readQuery({
-        query: FETCH_POSTS_QUERY
+        query: FETCH_POST_QUERY
       })
       data.getPosts = [result.data.createPost, ...data.getPosts];
-      proxy.writeQuery({ query: FETCH_POSTS_QUERY });
+      proxy.writeQuery({ query: FETCH_POST_QUERY });
       values.body = '';
     }
   });
@@ -46,7 +46,7 @@ function PostForm(){
           </Form.Field>
         </Form>
           {error && (
-            <div classname="ui error message" style={ marginBottom: 20 }>
+            <div classname="ui error message" style={ marginBottom=20 }>
             <ul classname="list">
               <li>{error.graphQLErrors[0].message}</li>
             </ul>
@@ -70,5 +70,6 @@ mutation createPost($body: String!){
     commentCount
   }
 }
+`
 
 export default PostForm
