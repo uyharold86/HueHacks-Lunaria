@@ -24,6 +24,6 @@ mongoose
   .then((res) => {
     console.log(`Server running at ${res.url}`);
   });
-  .catch(err => {
+  /* .catch(err => {
     console.error(err) // this will catch any error that happpens
-  }) 
+  }); */
