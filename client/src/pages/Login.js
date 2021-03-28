@@ -8,7 +8,7 @@ import { useForm } from '../util/hooks';
 
 
 function Login(props){
-  const context = useCOntest(AuthContext)
+  const context = useContest(AuthContext)
   const[errors, setErrors] = useState({});
   const {vonChange, onSubmit, values } = useForm(loginUserCallback, {
     username: '',
@@ -41,7 +41,7 @@ function Login(props){
             name="username"
             type="text"
             value={values.username}
-            error={errors.username ? true : flase}
+            error={errors.username ? true : false}
             onChange={onChange}
             />
           
@@ -51,7 +51,7 @@ function Login(props){
             name="password"
             type="password"
             value={values.password}
-            error={errors.password ? true : flase}
+            error={errors.password ? true : false}
             onChange={onChange}
             />
           

@@ -16,4 +16,4 @@ function AuthRoute({ componenet: Componenet, ...rest }) {
   )
 }
 
-export defualt AuthRoute;
+export default AuthRoute;

@@ -6,11 +6,11 @@ import { Button, Card, Form, Grid, Image, Icon, Label} from 'semantic-ui-react';
 
 
 import { AuthContext } from '../context/auth';
-import LikeButton form '../components/LikeButton';
-import DeleteButton form '../components/DeleteButton';
+import LikeButton from '../components/LikeButton';
+import DeleteButton from '../components/DeleteButton';
 import MyPopup from '../util.Mypopup'
 
-fucntion SinglePost(props) {
+function SinglePost(props) {
   const postId = props.match.params.postId;
   const { user } = useContext(AuthContext);
   const commentInputRef = useRef(null);
